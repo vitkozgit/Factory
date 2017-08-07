@@ -1,5 +1,5 @@
 package factory;
 
 public enum BrandCars {
-    AUDI, FORD;
+    AUDI, FORD
 }

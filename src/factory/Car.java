@@ -14,5 +14,4 @@ public abstract class Car {
         this.id = id;
     }
     abstract public factory.BrandCars getBrand();
-    abstract public void drive();
 }

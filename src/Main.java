@@ -7,12 +7,13 @@ import java.util.List;
 import java.util.Random;
 
 public class Main {
-    public static boolean rand() {
+    private static boolean rand() {
         Random random = new Random();
         return random.nextBoolean();
     }
 
     public static void main(String[] args) {
+        System.out.println(Car.LOGO);
         Factory factory = new Factory();
         List<Car> cars = new ArrayList<>();
         for(int i = 0; i < 10; ++i) {
