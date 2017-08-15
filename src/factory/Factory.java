@@ -1,12 +1,12 @@
 package factory;
 
 public class Factory {
-    public factory.Car create(BrandCars brandCars) {
+    public static Car create(BrandCars brandCars) {
         switch (brandCars) {
             case FORD:
                 return new Ford();
             case AUDI:
-                return new factory.Audi();
+                return new Audi();
             default:
                 return null;
         }

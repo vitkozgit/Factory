@@ -14,13 +14,12 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println(Car.LOGO);
-        Factory factory = new Factory();
         List<Car> cars = new ArrayList<>();
         for(int i = 0; i < 10; ++i) {
             if(rand()) {
-                cars.add(factory.create(BrandCars.AUDI));
+                cars.add(Factory.create(BrandCars.AUDI));
             } else {
-                cars.add(factory.create(BrandCars.FORD));
+                cars.add(Factory.create(BrandCars.FORD));
             }
         }
         System.out.println(Car.numberOfCars);
